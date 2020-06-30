@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Segment, Container} from 'semantic-ui-react';
-import MainMenu from './Menu';
 import logo from '../img/logo.png'
 
 const style = {
@@ -9,7 +8,7 @@ const style = {
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
       backgroundPosition: "center",
-      minHeight: "700px",
+      minHeight: "610px",
     }
 }
 
@@ -19,7 +18,6 @@ class Header extends Component {
             <div id='main-page-header'>
                 <Segment vertical style={style.header}>
                     <Container>
-                        <MainMenu/>
                     </Container>
                 </Segment>
             </div>

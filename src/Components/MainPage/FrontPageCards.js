@@ -9,9 +9,9 @@ import {
     CardDescription,
     Image} from 'semantic-ui-react';
 
-import choir from '../img/choir.png'
-import musicNotation from '../img/music_notation.png'
-import musicConductor from '../img/music_conductor.png'
+import choir from '../../img/choir.png'
+import musicNotation from '../../img/music_notation.png'
+import musicConductor from '../../img/music_conductor.png'
 
 const style = {
     cardAbout: {
@@ -32,10 +32,7 @@ class FrontPageCards extends Component {
     render () {
         return (
             <div id="front-page-cards" style={style.gridSegment}>
-                <Grid 
-                  columns={2}
-                  centered={true}
-                >
+                <Grid columns={2} centered doubling stackable>
                     <GridRow>
                         <GridColumn>
                             <Card link fluid style={style.cardAbout} color='red'>

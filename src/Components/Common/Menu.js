@@ -6,8 +6,12 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import menuData from '../data/menuData'
-import MainPage from './MainPage'
+import menuData from '../../data/menuData'
+import MainPage from '../MainPage/MainPage'
+import Contact from '../Contact/Contact'
+import About from '../About/About'
+import Media from '../Media/Media'
+import Concerts from '../Concerts/Concerts'
 
 class MainMenu extends Component {
     state = {activeItem: 'welcome'}
@@ -41,9 +45,11 @@ class MainMenu extends Component {
                         </Menu>
                     </Container>
                         <Switch>
-                            <Route key path="/" exact={true}>
-                                <MainPage/>
-                            </Route>
+                            <Route path="/" exact={true} component={MainPage}/>
+                            <Route path="/contact" exact={true} component={Contact} />
+                            <Route path="/about" exact={true} component={About} />
+                            <Route path="/media" exact={true} component={Media} />
+                            <Route path="/concerts" exact={true} component={Concerts} />
                         </Switch>
                 </Router>
             </div>

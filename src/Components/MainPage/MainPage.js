@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './Header'
-import Footer from './Footer'
 import MainPageContent from './MainPageContent'
 
 class MainPage extends React.Component {
@@ -9,7 +8,6 @@ class MainPage extends React.Component {
             <div>
                 <Header/>
                 <MainPageContent/>
-                <Footer/>
             </div>
         )
     }

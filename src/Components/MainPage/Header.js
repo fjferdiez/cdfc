@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Segment, Container} from 'semantic-ui-react';
-import logo from '../img/logo.png'
+import logo from '../../img/logo.png'
 
 const style = {
     header: {

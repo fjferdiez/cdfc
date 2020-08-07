@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Segment, Container} from 'semantic-ui-react';
 import FrontPageCards from './FrontPageCards'
-import front from '../img/front.jpg'
+import front from '../../img/front.jpg'
 
 const style = {
     cards: {

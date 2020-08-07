@@ -7,6 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import menuData from '../data/menuData'
+import MainPage from './MainPage'
 
 class MainMenu extends Component {
     state = {activeItem: 'welcome'}
@@ -15,43 +16,36 @@ class MainMenu extends Component {
 
     render () {
         const { activeItem } = this.state
+        const self = this
 
         var menu = []
 
-        var routes = []
-
-        for (var ii=0; ii < menuData.items.length; ii++){
-            var it = menuData.items[ii]
-
-            menu.push(
-                <Menu.Item name={it.name}
+        menu = menuData.items.map(function(it) {
+            return (<Menu.Item name={it.name}
                     key={it.id}
                     as={Link} to={it.path}
                     active={activeItem === it.name}
                     header={it.isHeader}
-                    onClick={this.handleItemClick}
+                    onClick={self.handleItemClick}
                     position={it.position==='right' ? 'right' : 'left'}
             />)
-
-            routes.push(
-                <Route key={it.id} path={it.path}>
-                </Route>
-            )
-        }
+        })
 
         return(
-            <div id="main-menu" style={{padding: "20px 0"}}>
-                <Container>
-                    <Router>
+            <div id="main-menu" style={{paddingTop: "20px"}}>
+                <Router>
+                    <Container>
                         <Menu pointing secondary stackable 
                             size='massive'>
                             {menu}
                         </Menu>
+                    </Container>
                         <Switch>
-                            {routes}
+                            <Route key path="/" exact={true}>
+                                <MainPage/>
+                            </Route>
                         </Switch>
-                    </Router>
-                </Container>
+                </Router>
             </div>
         )
     }

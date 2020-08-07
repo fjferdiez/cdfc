@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Segment, Container, Grid, Header} from 'semantic-ui-react'
+import footerData from '../data/footerData'
 
 const style = {
     minHeight: "100px",
@@ -8,24 +9,25 @@ const style = {
 
 class Footer extends Component {
     render() {
+        var gridContent = []
+
+        for(var ii = 0;ii<footerData.items.length;ii++){
+            var it = footerData.items[ii]
+
+            gridContent.push(
+                <Grid.Column>
+                    <Header inverted id={it.id} as={it.type} content={it.content} textAlign={it.textAlign} />
+                </Grid.Column>
+            )
+        }
+
         return (
             <div id="footer">
                 <Segment vertical inverted style={style}>
                     <Container>
                         <Grid columns={4} divided inverted>
                             <Grid.Row>
-                                <Grid.Column>
-                                    <Header inverted as='h4' content='About' textAlign='center' />
-                                </Grid.Column>
-                                <Grid.Column>
-                                    <Header inverted as='h4' content='Media' textAlign='center' />
-                                </Grid.Column>
-                                <Grid.Column>
-                                    <Header inverted as='h4' content='Concerts' textAlign='center' />
-                                </Grid.Column>
-                                <Grid.Column>
-                                    <Header inverted as='h4' content='Contact Us' textAlign='center' />
-                                </Grid.Column>
+                                {gridContent}
                             </Grid.Row>
                         </Grid>
                         <Header inverted as='h6' content='This will be the place for ICP' textAlign='center' />

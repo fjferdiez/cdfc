@@ -5,35 +5,40 @@ const menuData = {
             name: "welcome", 
             path: "/",
             isHeader: true,
-            position: "left"
+            position: "left",
+            component: "MainPage"
         },
         {
             id: 2,
             name: "aboutUs", 
             path: "/about",
             isHeader: false,
-            position: "left"
+            position: "left",
+            component: "About"
         },
         {
             id: 3,
             name: "media", 
             path: "/media",
             isHeader: false,
-            position: "left"
+            position: "left",
+            component: "Media"
         },
         {
             id: 4,
             name: "concerts", 
             path: "/concerts",
             isHeader: false,
-            position: "left"
+            position: "left",
+            component: "Concerts"
         },
         {
             id: 5,
             name: "contactUs", 
             path: "/contact",
             isHeader: false,
-            position: "right"
+            position: "right",
+            component: "Contact"
         },
 
     ]

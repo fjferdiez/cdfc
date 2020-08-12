@@ -16,15 +16,15 @@ import Concerts from '../Concerts/Concerts'
 class MainMenu extends Component {
     state = {activeItem: 'welcome'}
 
-    handleItemClick = (e, { name }) => this.setState({activeItem: name})
+    handleItemClick = (event, { name }) => {
+        this.setState({activeItem: name})
+    }
 
     render () {
         const { activeItem } = this.state
         const self = this
 
-        var menu = []
-
-        menu = menuData.items.map(function(it) {
+        var menu = menuData.items.map(function(it) {
             return (<Menu.Item name={it.name}
                     key={it.id}
                     as={Link} to={it.path}
@@ -45,11 +45,11 @@ class MainMenu extends Component {
                         </Menu>
                     </Container>
                         <Switch>
-                            <Route path="/" exact={true} component={MainPage}/>
-                            <Route path="/contact" exact={true} component={Contact} />
-                            <Route path="/about" exact={true} component={About} />
-                            <Route path="/media" exact={true} component={Media} />
-                            <Route path="/concerts" exact={true} component={Concerts} />
+                            <Route path="/" exact component={MainPage}/>
+                            <Route path="/contact" exact component={Contact} />
+                            <Route path="/about" exact component={About} />
+                            <Route path="/media" exact component={Media} />
+                            <Route path="/concerts" exact component={Concerts} />
                         </Switch>
                 </Router>
             </div>

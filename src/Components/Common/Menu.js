@@ -12,6 +12,7 @@ import Contact from '../Contact/Contact'
 import About from '../About/About'
 import Media from '../Media/Media'
 import Concerts from '../Concerts/Concerts'
+import logo from '../../img/logo.png'
 
 class MainMenu extends Component {
     state = {activeItem: 'welcome'}
@@ -41,6 +42,9 @@ class MainMenu extends Component {
                     <Container>
                         <Menu pointing secondary stackable 
                             size='massive'>
+                            <Menu.Item position="left" name="welcome" header as={Link} to="/" onClick={self.handleItemClick}>
+                                <img src={logo} style={{width: '220px'}} alt="Chengdu Philharmonic Choir Logo"/>
+                            </Menu.Item>
                             {menu}
                         </Menu>
                     </Container>

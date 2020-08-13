@@ -1,13 +1,11 @@
 import React from 'react'
-import Header from './Header'
-import MainPageContent from './MainPageContent'
+import Welcome from './Welcome'
 
 class MainPage extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
-                <MainPageContent/>
+                <Welcome/>
             </div>
         )
     }

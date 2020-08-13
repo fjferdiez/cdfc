@@ -4,7 +4,7 @@ const menuData = {
             id: 1,
             name: "welcome", 
             path: "/",
-            isHeader: true,
+            isHeader: false,
             position: "left",
             component: "MainPage"
         },

@@ -1,5 +1,7 @@
 import React from 'react'
 import {Segment, Container} from 'semantic-ui-react'
+import VideoGallery from './VideoGallery'
+import PhotoGallery from './PhotoGallery'
 
 const style = {
     minHeight: '600px'
@@ -11,7 +13,8 @@ class Media extends React.Component {
             <div className="Contact" style={style}>
                 <Segment vertical>
                     <Container>
-                        <h1>This is the Media Page</h1>
+                        <PhotoGallery/>
+                        <VideoGallery/>
                     </Container>
                 </Segment>
             </div>

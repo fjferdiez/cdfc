@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/cdfc/static/js/main.2064592e.chunk.js",
+    "main.js.map": "/cdfc/static/js/main.2064592e.chunk.js.map",
+    "runtime-main.js": "/cdfc/static/js/runtime-main.a6b898bf.js",
+    "runtime-main.js.map": "/cdfc/static/js/runtime-main.a6b898bf.js.map",
+    "static/css/2.7ef53eb2.chunk.css": "/cdfc/static/css/2.7ef53eb2.chunk.css",
+    "static/js/2.0cc902df.chunk.js": "/cdfc/static/js/2.0cc902df.chunk.js",
+    "static/js/2.0cc902df.chunk.js.map": "/cdfc/static/js/2.0cc902df.chunk.js.map",
+    "index.html": "/cdfc/index.html",
+    "precache-manifest.ae4e74050464876c5189257a2ad9cb41.js": "/cdfc/precache-manifest.ae4e74050464876c5189257a2ad9cb41.js",
+    "service-worker.js": "/cdfc/service-worker.js",
+    "static/css/2.7ef53eb2.chunk.css.map": "/cdfc/static/css/2.7ef53eb2.chunk.css.map",
+    "static/js/2.0cc902df.chunk.js.LICENSE.txt": "/cdfc/static/js/2.0cc902df.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/cdfc/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/front.jpg": "/cdfc/static/media/front.a6e616b2.jpg",
+    "static/media/logo.png": "/cdfc/static/media/logo.62337217.png",
+    "static/media/qrcode.jpg": "/cdfc/static/media/qrcode.d9896c77.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6b898bf.js",
+    "static/css/2.7ef53eb2.chunk.css",
+    "static/js/2.0cc902df.chunk.js",
+    "static/js/main.2064592e.chunk.js"
+  ]
+}

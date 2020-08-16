@@ -49,11 +49,11 @@ class MainMenu extends Component {
                         </Menu>
                     </Container>
                         <Switch>
-                            <Route path="/" exact component={MainPage}/>
                             <Route path="/contact" exact component={Contact} />
                             <Route path="/about" exact component={About} />
                             <Route path="/media" exact component={Media} />
                             <Route path="/concerts" exact component={Concerts} />
+                            <Route path="/" component={MainPage}/>
                         </Switch>
                 </Router>
             </div>

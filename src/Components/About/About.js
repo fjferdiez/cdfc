@@ -1,16 +1,12 @@
 import React from 'react'
-import {Container, Divider, Card} from 'semantic-ui-react'
+import {Container, Divider} from 'semantic-ui-react'
 import Biography from './Biography'
 import Biographies from '../../data/BiographiesData'
-import Teachers from '../../data/TeachersData'
+import StaffGrid from './StaffGrid'
 
 const styleAbout = {
     minHeight: '600px',
     padding: '20px 0'
-}
-
-const styleTeachers = {
-    padding: '30px 0'
 }
 
 class About extends React.Component {
@@ -24,9 +20,7 @@ class About extends React.Component {
                 <Container>
                     {bios}
                     <Divider horizontal>Our Conductors</Divider>
-                    <div className="Teachers" style={styleTeachers}>
-                        <Card.Group centered items={Teachers} itemsPerRow={3} doubling stackable/>
-                    </div>
+                    <StaffGrid/>
                 </Container>
             </div>
         )

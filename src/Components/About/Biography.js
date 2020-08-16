@@ -3,7 +3,7 @@ import {Header, Grid, Image, Segment, Transition} from 'semantic-ui-react'
 
 const style = {
     segment: {
-        padding: '30px 0 10px 0'
+        padding: '20px'
     },
     paragraph: {
         textAlign: 'justify'
@@ -18,9 +18,9 @@ class Biography extends React.Component {
     organizeGrid(image, align, paragraphs, title) {
         var finalLayout = null
 
-        var imageLayout = (<Grid.Column width={6}>
+        var imageLayout = (<Grid.Column width={6} verticalAlign="middle">
             <Transition animation="pulse" duration="800" visible={this.state.visible}>
-                <Image src={image} size='big' circular centered onMouseOver={this.toggleVisibility}/>
+                <Image src={image} size='big' circular centered onMouseEnter={this.toggleVisibility} verticalAlign='middle'/>
             </Transition>
             </Grid.Column>)
 

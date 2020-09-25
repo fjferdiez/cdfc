@@ -1,10 +1,13 @@
 import React from 'react'
 import {Segment, Container, Header, Icon} from 'semantic-ui-react'
 import SocialMedia from './SocialMedia'
+// import front from '../../img/front.jpg'
 
 const style = {
     minHeight: '600px',
-    padding: '20px 0'
+    padding: '20px 0',
+    // backgroundImage: 'url(' + front + ')',
+    // opacity: 0.75
 }
 
 class Contact extends React.Component {
